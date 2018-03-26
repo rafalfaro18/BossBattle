@@ -11,6 +11,11 @@ public class Cannonball : MonoBehaviour {
 	public ParticleSystem particle = null;
 
 	void Awake(){
-		this.GetComponent<Rigidbody> ().AddRelativeForce (new Vector3(0,400,400));
+		this.GetComponent<Rigidbody> ().AddRelativeForce (new Vector3(0,GetRandomValue(),GetRandomValue()));
+		this.GetComponent<AudioSource> ().PlayOneShot (audioShoot);
+	}
+
+	float GetRandomValue(){
+		return Random.RandomRange (minForce, maxForce);
 	}
 }
