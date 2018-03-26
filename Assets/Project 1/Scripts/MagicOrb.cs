@@ -10,4 +10,16 @@ public class MagicOrb : MonoBehaviour {
 	public AudioClip audioHit = null;
 	public AudioClip audioShoot = null;
 	public ParticleSystem particle = null;
+
+	void Awake (){
+		this.GetComponent<AudioSource> ().PlayOneShot (audioShoot);
+	}
+
+	void Update(){
+		MoveObject ();
+	}
+
+	void MoveObject(){
+		this.transform.Translate (0,0,speed * Time.deltaTime);
+	}
 }
