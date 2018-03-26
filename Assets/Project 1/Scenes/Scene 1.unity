@@ -209,6 +209,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560c3a08ae0ac4df48ce23fe72c1abd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitpoint: 10
+  speed: 5
+  audioHit: {fileID: 8300000, guid: a3138f2e27745448fbbecc189cc2e6cc, type: 3}
+  audioShoot: {fileID: 8300000, guid: fecb1d85e66ae4749b21fc7acf2837e0, type: 3}
+  particle: {fileID: 0}
 --- !u!1 &451594227
 GameObject:
   m_ObjectHideFlags: 0
