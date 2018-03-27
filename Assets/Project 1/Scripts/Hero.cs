@@ -9,6 +9,8 @@ public class Hero : MonoBehaviour {
 	public GameObject magicOrb = null;
 	public Transform socket = null;
 	public int magicOrbAmount = 20;
+	public int health = 100;
+
 
 	void Update(){
 		Move ();
@@ -29,6 +31,22 @@ public class Hero : MonoBehaviour {
 				GameObject obj = Instantiate (magicOrb, socket.position, socket.rotation) as GameObject;
 				obj.name = "magicOrgb";
 			}
+		}
+	}
+
+	void OnTriggerEnter(Collider other){
+		if (other.name == "canonball") {
+			int hp = other.GetComponent<Cannonball> ().hitpoint;
+			GetHealth (hp);
+		}
+	}
+
+	void GetHealth(int hp){
+		if (health > 0) {
+			health -= hp;
+			Debug.Log ("Hero health: " + health);
+		} else {
+			Debug.Log ("Game Over");
 		}
 	}
 }

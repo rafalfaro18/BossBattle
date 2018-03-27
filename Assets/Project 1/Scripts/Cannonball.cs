@@ -32,6 +32,6 @@ public class Cannonball : MonoBehaviour {
 	IEnumerator DisableParticle(){
 		yield return new WaitForSeconds (delayTime);
 		particle.enableEmission = false;
-		hitpoint = 0; //nothing can be hit by it
+		hitpoint = 0; //doesnt do damage anymore
 	}
 }
