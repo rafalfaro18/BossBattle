@@ -401,10 +401,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6482969e005a044f39aa1ae94c7f771d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonBall: {fileID: 1817530106255208, guid: 8a06cf8fedfb54528ac5893b3762639e, type: 2}
+  canonball: {fileID: 1817530106255208, guid: 8a06cf8fedfb54528ac5893b3762639e, type: 2}
   player: {fileID: 451594231}
-  minDelay: 1
-  maxDelay: 4
+  minDelay: 2
+  maxDelay: 6
+  health: 100
+  hitColor: {r: 0.9882353, g: 1, b: 0.09019608, a: 1}
 --- !u!1 &1016582970
 GameObject:
   m_ObjectHideFlags: 0

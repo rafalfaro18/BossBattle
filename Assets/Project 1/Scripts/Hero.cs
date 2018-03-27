@@ -29,7 +29,7 @@ public class Hero : MonoBehaviour {
 			if(magicOrbAmount > 0){
 				magicOrbAmount--;	
 				GameObject obj = Instantiate (magicOrb, socket.position, socket.rotation) as GameObject;
-				obj.name = "magicOrgb";
+				obj.name = "magicOrb";
 			}
 		}
 	}
