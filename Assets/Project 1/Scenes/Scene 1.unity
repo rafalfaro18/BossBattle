@@ -290,6 +290,7 @@ MonoBehaviour:
   socket: {fileID: 1016582971}
   magicOrbAmount: 20
   health: 100
+  hitColor: {r: 0.59607846, g: 0.24705884, b: 0.27058825, a: 1}
 --- !u!54 &451594233
 Rigidbody:
   m_ObjectHideFlags: 0
